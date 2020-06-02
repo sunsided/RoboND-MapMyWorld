@@ -20,6 +20,11 @@ RUN apt-get update && apt-get install -y \
     protobuf-compiler \
  && rm -rf /var/lib/apt/lists/*
 
+# Install packages for Map My World project
+RUN apt-get update && apt-get install -y \
+    ros-kinetic-rtabmap \
+    ros-kinetic-rtabmap-ros \
+ && rm -rf /var/lib/apt/lists/*
 
 # Allow SSH login into the container.
 # See e.g. https://github.com/JetBrains/clion-remote/blob/master/Dockerfile.remote-cpp-env
