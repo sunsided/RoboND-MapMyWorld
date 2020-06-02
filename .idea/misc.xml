@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/src">
+    <contentRoot DIR="$PROJECT_DIR$" />
+  </component>
+  <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/src/ball_chaser" />
+      <file path="$PROJECT_DIR$/src/my_robot" />
+    </sourceRoots>
+    <libraryRoots>
+      <file path="$PROJECT_DIR$/devel/include" />
+      <file path="/usr/src/gmock" />
+      <file path="/usr/src/gtest" />
+    </libraryRoots>
+    <excludeRoots>
+      <file path="$PROJECT_DIR$/.tmp" />
+      <file path="$PROJECT_DIR$/build" />
+      <file path="$PROJECT_DIR$/devel/lib" />
+      <file path="$PROJECT_DIR$/devel/share" />
+    </excludeRoots>
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+</project>
