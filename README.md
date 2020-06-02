@@ -52,6 +52,8 @@ To perform mapping (thereby deleting any already existing map) we can run
 roslaunch map_my_world mapping.launch
 ```
 
+This will create or overwrite the database file in `~/.ros/rtabmap.db`.
+
 ![](.readme/mapping.webp)
 
 If a map already exists, we can also choose to enter localization mode
@@ -60,6 +62,10 @@ by running
 ```bash
 roslaunch map_my_world localization.launch
 ```
+
+To obtain an instance of the required `rtabmap.db` (usually in `~/.ros/rtabmap.db`; 
+see the `localization.launch` file for different paths), see the [0.0.0 release](https://github.com/sunsided/RoboND-MapMyWorld/releases/tag/0.0.0).
+This file was generated during the development of this project.
 
 ![](.readme/localization.webp)
 
