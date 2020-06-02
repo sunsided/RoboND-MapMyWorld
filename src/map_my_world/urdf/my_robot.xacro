@@ -2,7 +2,7 @@
 
 <robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <xacro:include filename="$(find where_am_i)/urdf/my_robot.gazebo" />
+    <xacro:include filename="$(find map_my_world)/urdf/my_robot.gazebo" />
 
     <link name="robot_footprint"/>
 
@@ -232,7 +232,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://where_am_i/meshes/hokuyo.dae" />
+                <mesh filename="package://map_my_world/meshes/hokuyo.dae" />
             </geometry>
         </visual>
 
@@ -259,6 +259,16 @@
         <origin xyz="0.15 0 0.05" rpy="0 0 0"/>
         <parent link="chassis"/>
         <child link="hokuyo"/>
+    </joint>
+
+    <!-- An RGB-D camera required for the RTAB-Map package -->
+    <link name="camera_link_optical">
+    </link>
+
+    <joint name="camera_optical_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
+        <parent link="camera"/>
+        <child link="camera_link_optical"/>
     </joint>
 
     <gazebo reference="front_right_wheel">

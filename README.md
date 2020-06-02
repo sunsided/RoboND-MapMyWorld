@@ -1,15 +1,15 @@
 # RoboND Map My World
 
-![](.readme/whee.gif)
+![](.readme/rgbd-sweep.webp)
 
 To run, execute:
 
 ```bash
-roslaunch ...
-roslaunch ...
+roslaunch map_my_world world.launch
+roslaunch map_my_world mapping.launch
 ```
 
-You can also use keyboard teleop to control the bot manually:
+Now use keyboard teleop to control the bot manually:
 
 ```bash
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
