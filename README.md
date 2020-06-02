@@ -1,4 +1,4 @@
-# RoboND Map My World
+# RGB-D based SLAM via RTAB-Map
 
 This project is about performing SLAM using RGB-D based 
 Real-Time Appearance-Based Mapping via the RTAB-Map algorithm.
