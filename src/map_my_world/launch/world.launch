@@ -16,12 +16,12 @@
   </include>
 
   <!-- Robot pose -->
-  <arg name="x" default="5"/>
-  <arg name="y" default="2.155"/>
-  <arg name="z" default="0.000000"/>
+  <arg name="x" default="0.283483"/>
+  <arg name="y" default="-0.067620"/>
+  <arg name="z" default="0"/>
   <arg name="roll" default="0"/>
   <arg name="pitch" default="0"/>
-  <arg name="yaw" default="0"/>
+  <arg name="yaw" default="1.341218"/>
 
   <!-- Launch other relevant files-->
   <include file="$(find map_my_world)/launch/robot_description.launch"/>
