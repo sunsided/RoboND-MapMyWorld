@@ -1,6 +1,6 @@
 .tmp/
 tmp/
-
+rtabmap*
 
 # Created by https://www.gitignore.io/api/ros,c++,clion
 # Edit at https://www.gitignore.io/?templates=ros,c++,clion
