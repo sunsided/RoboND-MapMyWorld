@@ -21,8 +21,8 @@
 
             <!-- RTAB-Map Inputs -->
             <remap from="scan" to="/scan"/>
-            <remap from="rgb/image_raw" to="$(arg rgb_topic)"/>
-            <remap from="depth/image_raw" to="$(arg depth_topic)"/>
+            <remap from="rgb/image" to="$(arg rgb_topic)"/>
+            <remap from="depth/image" to="$(arg depth_topic)"/>
             <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
 
             <!-- RTAB-Map Output -->
@@ -65,6 +65,9 @@
             <remap from="depth/image"     to="$(arg depth_topic)"/>
             <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
             <remap from="scan"            to="/scan"/>
+
+            <!-- Fix for mapping not starting up -->
+            <remap from="odom"            to="/odom"/>
         </node>
     </group>
 </launch>
