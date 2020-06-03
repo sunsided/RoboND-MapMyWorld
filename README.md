@@ -8,7 +8,7 @@ is developed against ROS Kinetic.
 
 ![](.readme/rgbd-sweep.webp)
 
-To build the project, you can try executing `./run_nvidia.sh` to drop
+To build the project, you can try executing `./run-nvidia.sh` to drop
 into an X11 aware Docker container with NVIDIA GPU support.
 
 ---
